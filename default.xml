@@ -14,15 +14,15 @@
 
   <remote fetch="http://github.com/STMicroelectronics" name="st"/>
 
-  <project remote="yocto" name="poky" path="sources/poky"/>
-  <project remote="oe" name="meta-openembedded.git" path="sources/meta-openembedded"/>
+  <project remote="yocto" name="poky" path="sources/poky" revision="2e7fa80bf9a555649edf7509b9b626a768761e88"/>
+  <project remote="oe" name="meta-openembedded.git" path="sources/meta-openembedded" revision="de37512b25c1f8c6bb6ab2b3782ac0fe01443483"/>
 
-  <project remote="koan" name="meta-st-stm32mp" path="sources/meta-st-stm32mp"/>
+  <project remote="koan" name="meta-st-stm32mp" path="sources/meta-st-stm32mp" revision="2d5775550215410c9555f721cbb08b57e6211517"/>
   <project remote="ole2" name="meta-st-openstlinux" path="sources/meta-st-openstlinux"/>
 
-  <project remote="qt5" name="meta-qt5" path="sources/meta-qt5"/>
+  <project remote="qt5" name="meta-qt5" path="sources/meta-qt5" revision="0d8eb956015acdea7e77cd6672d08dce18061510"/>
 
-  <project remote="koan" name="koan-stm32mp-bsp-base" path="sources/base">
+  <project remote="koan" name="koan-stm32mp-bsp-base" path="sources/base" revision="ea81e0302bf0d92410c9c01d2fd99f97e429d9c6">
 	<linkfile dest="README.md" src="README.md"/>
 	<linkfile dest="setup-environment" src="setup-environment"/>
   </project>
