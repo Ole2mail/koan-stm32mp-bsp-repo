@@ -8,6 +8,7 @@
 
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/koansoftware" name="koan"/>
+  <remote fetch="https://github.com/Ole2mail" name="ole2"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://github.com/meta-qt5" name="qt5"/>
 
@@ -17,7 +18,7 @@
   <project remote="oe" name="meta-openembedded.git" path="sources/meta-openembedded"/>
 
   <project remote="koan" name="meta-st-stm32mp" path="sources/meta-st-stm32mp"/>
-  <project remote="koan" name="meta-st-openstlinux" path="sources/meta-st-openstlinux"/>
+  <project remote="ole2" name="meta-st-openstlinux" path="sources/meta-st-openstlinux"/>
 
   <project remote="qt5" name="meta-qt5" path="sources/meta-qt5"/>
 
