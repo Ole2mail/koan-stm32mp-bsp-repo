@@ -5,18 +5,20 @@ To get the BSP you need to have `repo` installed and use it as:
 Install the `repo` utility:
 
 [source,console]
-$: mkdir ~/bin
-$: curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-$: chmod a+x ~/bin/repo
+mkdir ~/bin
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+x ~/bin/repo
 
 Download the BSP source:
 
 [source,console]
-$: PATH=${PATH}:~/bin
-$: mkdir yocto-stm32-dunfell
-$: cd yocto-stm32-dunfell
-$: repo init -b dunfell -u https://github.com/ole2mail/koan-stm32mp-bsp-repo
-$: repo sync
+PATH=${PATH}:~/bin
+mkdir yocto-stm32-dunfell
+cd yocto-stm32-dunfell
+repo init -b dunfell -u https://github.com/ole2mail/koan-stm32mp-bsp-repo
+echo "ACCEPT_EULA_stm32mp1 = \"1\"" >> conf/local.conf
+echo "ACCEPT_EULA_stm32mp1-disco = \"1\"" >> conf/local.conf
+repo sync
 
 At the end of the commands you have every metadata you need to start work with.
 
